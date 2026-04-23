@@ -1,0 +1,56 @@
+body {
+    background-image: url("img/bg_02.png");
+background-color: #ffcf87;
+background-position: center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
+}
+.row{
+    width: 300px;
+    margin: 10px auto 10px auto;
+}
+.left{
+
+    float: left;
+    margin: auto auto auto auto;
+}
+.right{
+    float: right;
+    margin: auto auto auto auto;
+}
+.middle {
+    margin: auto 40px auto 40px;
+}
+.img-con {
+    vertical-align: middle;
+    margin-top: 70px;
+    object-fit: cover;
+}
+
+.img-con {
+    display: inline-flex;
+    vertical-align: middle;
+    padding: 30px;
+}
+.icons:hover {
+ animation-name: button;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+.button:hover {
+    scale: 97%
+}
+.button {
+    transition: scale 0.5s;
+}
+@keyframes button {
+    0% {transform: rotate(0deg);}
+    33% {transform: rotate(10deg);}
+    66% {transform: rotate(-14deg);}
+    100% {transform: rotate(0deg);}
+}
+
+
+

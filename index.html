@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>
+            icon site
+        </title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css">  
+    </header>
+
+    <body>
+        <div class="img-con">
+            <div class="row">
+<div class="left">
+        <div class="icons">
+         <div class="button">
+        <img id="bell" src="img/notif.png" onmouseover="this.src='img/notif alt.png';" onmouseout="this.src='img/notif.png';" alt="button of a bell" width="200" height="200">
+         </div>
+        </div>
+        <div class="icons">
+        <div class="button">
+        <img id="chat" src="img/chat.png" onmouseover="this.src='img/chat alt.png';" onmouseout="this.src='img/chat.png';" alt="button of a speech bubble" width="200" height="200">
+        </div>
+        </div>
+<div class="icons">
+        <div class="button">
+        <img id="photo" src="img/photo.png" onmouseover="this.src='img/photo alt.png';" onmouseout="this.src='img/photo.png';"alt="button of a picture frame with a landscape photo inside" width="200" height="200">
+        </div>
+        </div> 
+</div>
+</div>
+
+<div class="row">
+<div class="middle">
+    <div class="icons">
+        <div class="button">
+        <img id="contacts"src="img/contacts.png" onmouseover="this.src='img/contacts alt.png';" onmouseout="this.src='img/contacts.png';" alt="button of a contact book" width="200" height="200">
+    </div>
+    </div>
+
+    <div class="icons">
+        <div class="button">
+            <img id="phone" src="img/talk.png" onmouseover="this.src='img/talk alt.png';" onmouseout="this.src='img/talk.png';" alt="button of a phone" width="200" height="200">
+        </div>
+        </div>
+<div class="icons">
+        <div class="button">
+              <img src="img/paint.png" onmouseover="this.src='img/paintalt.png';" onmouseout="this.src='img/paint.png';"alt="button of a paint brush painting a smiley face icon on a canvas" width="200" height="200">
+        </div>
+        </div>
+        </div>
+</div>
+
+<div class="row">
+        <div class="right">
+            <div class="icons">
+    <div class="button">
+        <img id="calendar" src="img/cal.png" onmouseover="this.src='img/cal alt.png';" onmouseout="this.src='img/cal.png';" alt="button of a calendar" width="200" height="200">
+        </div>
+        </div>
+
+        <div class="icons">
+        <div class="button">
+<img id="pen" src="img/pen.png" onmouseover="this.src='img/pen alt.png';" onmouseout="this.src='img/pen.png';" alt="button of a pen writing on a piece of paper" width="200" height="200">
+        </div>
+        </div>
+        <div class="icons">
+        <div class="button">
+<img src="img/plus.png" onmouseover="this.src='img/plus alt.png';" onmouseout="this.src='img/plus.png';" alt="button of a plus symbol" width="200" height="200">
+        </div>
+        </div>
+        </div>
+        </div>
+        
+        </div>
+
+      <script>
+        var sound1 = new buzz.sound("sound/bell_01.mp3");
+        var sound2 = new buzz.sound("sound/whistle_01.mp3");
+        var sound3 = new buzz.sound("sound/click_01.mp3");
+        var sound4 = new buzz.sound("sound/bslap_01.mp3");
+
+         window.onload = function () {
+            document.getElementById ('bell').addEventListener('mouseover', function () {sound1.play();});
+            document.getElementById ('chat').addEventListener('mouseover', function () {sound2.play();});
+        document.getElementById ('photo').addEventListener('mouseover', function() {sound3.play();}); 
+        document.getElementById ('contacts').addEventListener('mouseover', function() {sound4.play();}); 
+        };
+      </script>
+
+    </body>
+    </html>
